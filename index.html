@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>michael keith ph</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -11,34 +11,47 @@
     <h1>michael keith ph</h1>
 
     <div class="icons">
-      <div class="icon" data-target="facebook">facebook</div>
-      <div class="icon" data-target="instagram">instagram</div>
-      <div class="icon" data-target="tiktok">tiktok</div>
-      <div class="icon" data-target="youtube">youtube</div>
+      <div class="icon" id="socials-btn">socials</div>
     </div>
 
-    <!-- Facebook popup -->
-    <div class="popup" id="facebook">
-      <a href="https://www.facebook.com/share/1AQMxiqQ3K/" target="_blank">michael keith</a>
-      <a href="https://www.facebook.com/share/1JRLFNZP4a/" target="_blank">michael keith</a>
-    </div>
+    <!-- socials row (hidden until socials pressed) -->
+    <div class="socials-row" id="socials-row" aria-hidden="true">
+      <!-- platform: facebook -->
+      <div class="platform">
+        <div class="platform-btn" data-platform="facebook">facebook</div>
+        <div class="platform-popup" id="facebook-popup" aria-hidden="true">
+          <a href="https://www.facebook.com/share/1AQMxiqQ3K/" target="_blank">michael keith</a>
+          <a href="https://www.facebook.com/share/1JRLFNZP4a/" target="_blank">michael keith</a>
+        </div>
+      </div>
 
-    <!-- Instagram popup -->
-    <div class="popup" id="instagram">
-      <a href="https://www.instagram.com/michaelkeithtp/" target="_blank">michaelkeithtp</a>
-      <a href="https://www.instagram.com/michaelkeithph/" target="_blank">michaelkeithph</a>
-    </div>
+      <!-- platform: instagram -->
+      <div class="platform">
+        <div class="platform-btn" data-platform="instagram">instagram</div>
+        <div class="platform-popup" id="instagram-popup" aria-hidden="true">
+          <a href="https://www.instagram.com/michaelkeithtp/" target="_blank">michaelkeithtp</a>
+          <a href="https://www.instagram.com/michaelkeithph/" target="_blank">michaelkeithph</a>
+        </div>
+      </div>
 
-    <!-- TikTok popup -->
-    <div class="popup" id="tiktok">
-      <a href="https://www.tiktok.com/@michaelkeithtp" target="_blank">mkeith</a>
-      <a href="https://www.tiktok.com/@michaelkeithph" target="_blank">kkeith</a>
-    </div>
+      <!-- platform: tiktok -->
+      <div class="platform">
+        <div class="platform-btn" data-platform="tiktok">tiktok</div>
+        <div class="platform-popup" id="tiktok-popup" aria-hidden="true">
+          <a href="https://www.tiktok.com/@michaelkeithtp" target="_blank">mkeith</a>
+          <a href="https://www.tiktok.com/@michaelkeithph" target="_blank">kkeith</a>
+        </div>
+      </div>
 
-    <!-- YouTube popup -->
-    <div class="popup" id="youtube">
-      <a href="https://www.youtube.com/@michaelkeithph" target="_blank">kkeith</a>
-      <a href="https://www.youtube.com/@mchlkthtp" target="_blank">mkkth</a>
+      <!-- platform: youtube -->
+      <div class="platform">
+        <div class="platform-btn" data-platform="youtube">youtube</div>
+        <div class="platform-popup" id="youtube-popup" aria-hidden="true">
+          <a href="https://www.youtube.com/@michaelkeithph" target="_blank">michaelkeithph</a>
+          <a href="https://www.youtube.com/@mchlkthtp" target="_blank">mkkth</a>
+          <a href="https://www.youtube.com/@kkmichaelph" target="_blank">michaelph</a>
+        </div>
+      </div>
     </div>
   </div>
 
