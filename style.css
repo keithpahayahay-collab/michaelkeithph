@@ -61,25 +61,27 @@ p {
 .sub-links {
   display: none;
   flex-direction: column;
-  gap: 0.4rem;
-  margin-top: 0.5rem;
+  gap: 0.5rem;
+  margin-top: 0.6rem;
   animation: fadeSlide 0.3s ease;
 }
 
 .sub-links a {
   color: #fff;
   text-decoration: none;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   border: 1px solid #fff;
-  padding: 0.4rem;
-  width: 200px;
+  padding: 0.6rem 0.8rem;
+  width: 230px;
   margin: 0 auto;
   transition: all 0.2s ease;
+  border-radius: 6px; /* smoother edges for mobile */
 }
 
 .sub-links a:hover {
   background: #fff;
   color: #000;
+  transform: scale(1.05);
 }
 
 /* footer */
@@ -116,7 +118,9 @@ p {
   }
 
   .sub-links a {
-    width: 160px;
+    width: 200px;
+    font-size: 0.75rem;
+    padding: 0.7rem 0.9rem;
   }
 
   h1 {
