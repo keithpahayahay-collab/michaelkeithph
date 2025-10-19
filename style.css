@@ -111,57 +111,9 @@ h1 {
   color: #000;
 }
 
-/* messaging form */
-.messaging {
-  width: 100%;
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.messaging h2 {
-  margin-bottom: 0.5rem;
-  font-size: 1.5rem;
-}
-
-.messaging input,
-.messaging textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #fff;
-  background: #000;
-  color: #fff;
-}
-
-.messaging input::placeholder,
-.messaging textarea::placeholder {
-  color: #fff;
-}
-
-.messaging button {
-  padding: 0.5rem 1rem;
-  border: 1px solid #fff;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.messaging button:hover {
-  background: #fff;
-  color: #000;
-}
-
-#status {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-}
-
 /* mobile tweaks */
 @media (max-width: 600px) {
   h1 { font-size: 1.4rem; }
   .icon, .platform-btn { padding: 0.55rem 0.9rem; }
   .platform-popup { width: 180px; }
-  .messaging { max-width: 100%; }
 }

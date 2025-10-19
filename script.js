@@ -1,10 +1,10 @@
-// --- socials and platform popups ---
+// socials and platform popups
 const socialsBtn = document.getElementById('socials-btn');
 const socialsRow = document.getElementById('socials-row');
 const platformBtns = document.querySelectorAll('.platform-btn');
 const platformPopups = document.querySelectorAll('.platform-popup');
 
-// function to hide all platform popups
+// hide all platform popups
 function hidePlatformPopups() {
   platformPopups.forEach(p => {
     p.style.display = 'none';
@@ -45,22 +45,4 @@ document.addEventListener('click', e => {
   socialsRow.style.display = 'none';
   socialsRow.setAttribute('aria-hidden', 'true');
   hidePlatformPopups();
-});
-
-// --- messaging system using EmailJS ---
-const form = document.getElementById('contact-form');
-
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
-
-  emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
-    .then(() => {
-      // show alert popup
-      alert("message sent successfully!");
-      // reset the form so user can send again
-      form.reset();
-    }, (err) => {
-      alert("oops... something went wrong. try again.");
-      console.error(err);
-    });
 });
