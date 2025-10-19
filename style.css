@@ -48,7 +48,6 @@ h1 {
   justify-content: center;
 }
 
-/* hover: invert (still only black & white) */
 .icon:hover {
   background: #fff;
   color: #000;
@@ -71,7 +70,7 @@ h1 {
   align-items: center;
 }
 
-/* platform button styling matches existing style */
+/* platform button styling */
 .platform-btn {
   border: 1px solid #fff;
   padding: 0.6rem 1.1rem;
@@ -79,14 +78,19 @@ h1 {
   transition: background 120ms ease, color 120ms ease;
 }
 
-/* popup that appears below each platform button */
+.platform-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* popup below each platform button */
 .platform-popup {
   position: absolute;
-  top: calc(100% + 0.6rem); /* below the platform button */
+  top: calc(100% + 0.6rem);
   left: 50%;
   transform: translateX(-50%);
   width: 220px;
-  display: none; /* toggled by JS */
+  display: none;
   flex-direction: column;
   gap: 0.45rem;
   border: 1px solid #fff;
@@ -103,15 +107,16 @@ h1 {
   text-decoration: none;
   border: 1px solid #fff;
   padding: 0.35rem 0;
+  transition: background 120ms ease, color 120ms ease;
 }
 
-/* hover behavior for links (still only black & white) */
+/* ✅ only the individual account box inverts */
 .platform-popup a:hover {
   background: #fff;
   color: #000;
 }
 
-/* small screens adjustments */
+/* small screens */
 @media (max-width: 600px) {
   h1 { font-size: 1.4rem; }
   .platform-popup { width: 180px; }
