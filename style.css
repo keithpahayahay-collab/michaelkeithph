@@ -40,9 +40,6 @@ h1 {
   padding: 0.8rem 1.5rem;
   cursor: pointer;
   transition: background 120ms ease, color 120ms ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .icon:hover {
@@ -105,6 +102,52 @@ h1 {
 .platform-popup a:hover {
   background: #fff;
   color: #000;
+}
+
+/* messaging form */
+.messaging {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.messaging h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.messaging input,
+.messaging textarea {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid #fff;
+  background: #000;
+  color: #fff;
+}
+
+.messaging input::placeholder,
+.messaging textarea::placeholder {
+  color: #fff;
+}
+
+.messaging button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #fff;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.messaging button:hover {
+  background: #fff;
+  color: #000;
+}
+
+#status {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 600px) {
