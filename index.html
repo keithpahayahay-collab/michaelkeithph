@@ -1,58 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>michael keith ph</title>
+
+  <!-- pixel/gaming font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>michael keith ph</h1>
+  <h1>michael keith ph</h1>
+  <p>site created by keith</p>
 
-    <div class="icons">
-      <div class="icon" id="socials-btn">socials</div>
+  <div class="section">
+    <!-- facebook -->
+    <div class="link-box" onclick="toggleLinks('facebook-links')">facebook</div>
+    <div id="facebook-links" class="sub-links">
+      <a href="https://www.facebook.com/share/1AQMxiqQ3K/" target="_blank">michael keith</a>
+      <a href="https://www.facebook.com/share/1JRLFNZP4a/" target="_blank">michael keith</a>
     </div>
 
-    <!-- socials row (hidden until socials pressed) -->
-    <div class="socials-row" id="socials-row" aria-hidden="true">
-      <!-- facebook -->
-      <div class="platform">
-        <div class="platform-btn" data-platform="facebook">facebook</div>
-        <div class="platform-popup" id="facebook-popup" aria-hidden="true">
-          <a href="https://www.facebook.com/share/1AQMxiqQ3K/" target="_blank">michael keith</a>
-          <a href="https://www.facebook.com/share/1JRLFNZP4a/" target="_blank">michael keith</a>
-        </div>
-      </div>
-
-      <!-- instagram -->
-      <div class="platform">
-        <div class="platform-btn" data-platform="instagram">instagram</div>
-        <div class="platform-popup" id="instagram-popup" aria-hidden="true">
-          <a href="https://www.instagram.com/michaelkeithtp/" target="_blank">@michaelkeithtp</a>
-          <a href="https://www.instagram.com/michaelkeithph/" target="_blank">@michaelkeithph</a>
-        </div>
-      </div>
-
-      <!-- tiktok -->
-      <div class="platform">
-        <div class="platform-btn" data-platform="tiktok">tiktok</div>
-        <div class="platform-popup" id="tiktok-popup" aria-hidden="true">
-          <a href="https://www.tiktok.com/@michaelkeithtp" target="_blank">mkeith</a>
-          <a href="https://www.tiktok.com/@michaelkeithph" target="_blank">kkeith</a>
-        </div>
-      </div>
-
-      <!-- youtube -->
-      <div class="platform">
-        <div class="platform-btn" data-platform="youtube">youtube</div>
-        <div class="platform-popup" id="youtube-popup" aria-hidden="true">
-          <a href="https://www.youtube.com/@michaelkeithph" target="_blank">kkeith</a>
-          <a href="https://www.youtube.com/@mchlkthtp" target="_blank">mkkeith</a>
-          <a href="https://www.youtube.com/@kkmichaelph" target="_blank">michaelph</a>
-        </div>
-      </div>
+    <!-- instagram -->
+    <div class="link-box" onclick="toggleLinks('instagram-links')">instagram</div>
+    <div id="instagram-links" class="sub-links">
+      <a href="https://www.instagram.com/michaelkeithtp/" target="_blank">michaelkeithtp</a>
+      <a href="https://www.instagram.com/michaelkeithph/" target="_blank">michaelkeithph</a>
     </div>
+
+    <!-- tiktok -->
+    <div class="link-box" onclick="toggleLinks('tiktok-links')">tiktok</div>
+    <div id="tiktok-links" class="sub-links">
+      <a href="https://www.tiktok.com/@michaelkeithtp" target="_blank">mkeith</a>
+      <a href="https://www.tiktok.com/@michaelkeithph" target="_blank">kkeith</a>
+    </div>
+
+    <!-- youtube -->
+    <div class="link-box" onclick="toggleLinks('youtube-links')">youtube</div>
+    <div id="youtube-links" class="sub-links">
+      <a href="https://www.youtube.com/@michaelkeithph" target="_blank">kkeith</a>
+      <a href="https://www.youtube.com/@mchlkthtp" target="_blank">mkkeith</a>
+      <a href="https://www.youtube.com/@kkmichaelph" target="_blank">michaelph</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>keithmichaelpahayahay@gmail.com</p>
+    <p>09504931466</p>
   </div>
 
   <script src="script.js"></script>
