@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -21,18 +19,28 @@ body {
   padding: 2rem;
 }
 
-/* headings */
+/* starfield background */
+#stars {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* keep content above the stars */
+h1,
+.section {
+  position: relative;
+  z-index: 1;
+}
+
 h1 {
   font-size: 1rem;
   letter-spacing: 2px;
 }
 
-p {
-  font-size: 0.6rem;
-  opacity: 0.8;
-}
-
-/* box layout */
 .section {
   display: flex;
   flex-direction: column;
@@ -41,8 +49,11 @@ p {
   width: 100%;
 }
 
-/* main clickable boxes */
 .link-box {
+  display: block;
+  color: #fff;
+  background: #000; /* keeps text readable over stars */
+  text-decoration: none;
   border: 2px solid #fff;
   padding: 1rem 2rem;
   width: 250px;
@@ -50,63 +61,15 @@ p {
   transition: all 0.25s ease-in-out;
 }
 
-.link-box:hover {
+.link-box:hover,
+.link-box:focus-visible {
   background: #fff;
   color: #000;
   transform: scale(1.05);
   box-shadow: 0 0 10px #fff;
+  outline: none;
 }
 
-/* smooth popup links */
-.sub-links {
-  display: none;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-top: 0.6rem;
-  animation: fadeSlide 0.3s ease;
-}
-
-.sub-links a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 0.7rem;
-  border: 1px solid #fff;
-  padding: 0.6rem 0.8rem;
-  width: 230px;
-  margin: 0 auto;
-  transition: all 0.2s ease;
-  border-radius: 6px; /* smoother edges for mobile */
-}
-
-.sub-links a:hover {
-  background: #fff;
-  color: #000;
-  transform: scale(1.05);
-}
-
-/* footer */
-.footer {
-  font-size: 0.6rem;
-  opacity: 0.7;
-  margin-top: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem; /* spacing between email and gcash */
-}
-
-/* animation for link popups */
-@keyframes fadeSlide {
-  from {
-    opacity: 0;
-    transform: translateY(-5px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* responsive design */
 @media (max-width: 600px) {
   body {
     gap: 1rem;
@@ -115,12 +78,6 @@ p {
   .link-box {
     width: 200px;
     padding: 0.8rem 1rem;
-  }
-
-  .sub-links a {
-    width: 200px;
-    font-size: 0.75rem;
-    padding: 0.7rem 0.9rem;
   }
 
   h1 {
