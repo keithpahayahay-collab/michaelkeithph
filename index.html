@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>kkeithmichael</title>
+
+  <!-- pixel/gaming font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="stars"></canvas>
+
+  <h1 aria-label="kkeithmichael">
+    <span class="ghost">kkeithmichael</span>
+    <span class="typing" aria-hidden="true"><span id="typed"></span><span class="cursor solid" id="cursor"></span></span>
+  </h1>
+
+  <div class="section">
+    <a class="link-box" href="https://www.facebook.com/kkeithmichael" target="_blank" rel="noopener noreferrer">facebook</a>
+    <a class="link-box" href="https://www.youtube.com/@kkeithmichael" target="_blank" rel="noopener noreferrer">youtube</a>
+    <a class="link-box" href="https://www.instagram.com/kkeithmichael" target="_blank" rel="noopener noreferrer">instagram</a>
+  </div>
+
+  <!-- game: score bar -->
+  <div id="hud" aria-hidden="true">
+    <div class="hud-row">
+      <span id="hud-time">0:00.0</span>
+      <span id="hud-best">best --</span>
+    </div>
+    <div class="hud-bar"><div id="hud-fill"></div></div>
+  </div>
+
+  <!-- game: game over screen -->
+  <div id="gameover" aria-hidden="true">
+    <div class="go-title">game over</div>
+    <div id="go-time">0:00.0</div>
+    <div id="go-best"></div>
+    <div class="go-buttons">
+      <button class="link-box" id="btn-again" type="button">play again</button>
+      <button class="link-box" id="btn-exit" type="button">exit</button>
+    </div>
+  </div>
+
+  <!-- game: exit button (top right) -->
+  <button id="btn-quit" type="button">exit</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
